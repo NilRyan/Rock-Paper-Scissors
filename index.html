@@ -12,6 +12,75 @@
 
 
 <script>
+    function computerPlay(){
+        let rockPaperScissor = ['rock', 'paper', 'scissors'];
+        return rockPaperScissor[Math.floor(Math.random() * rockPaperScissor.length)];
+    }
+
+    function play(playerSelection, computerSelection){
+        playerSelection = prompt('Rock, Paper or Scissors?', playerSelection);
+        computerSelection = computerPlay();
+
+         if(playerSelection.toLowerCase() === 'rock' ){
+             if(computerSelection === 'rock'){
+                return 'It\'s a draw!';
+             }
+
+            else if (computerSelection === 'scissors'){
+
+                return 'You win! Rock beats Scissors.';
+
+             } else if (computerSelection === 'paper'){
+
+                return 'You lose! Paper beats Rock.';
+             }
+             
+         } else if (playerSelection.toLowerCase() === 'paper' ){
+            if(computerSelection === 'paper'){
+                return 'It\'s a draw!';
+             }
+
+            else if (computerSelection === 'scissors'){
+
+                return 'You lose! Scissors beats Paper.';
+
+             } else if (computerSelection === 'rock'){
+
+                return 'You win! Paper beats Rock.';
+             }
+
+         } else if (playerSelection.toLowerCase() === 'scissors' ){
+            if(computerSelection === 'scissors'){
+                return 'It\'s a draw!';
+             }
+
+            else if (computerSelection === 'rock'){
+
+                return 'You lose! Rock beats Scissors.';
+
+             } else if (computerSelection === 'paper'){
+
+                return 'You win! Scissors beats Paper.';
+             }
+         }
+
+    }
+let winCount = 0;
+let loseCount = 0;
+ for(let i = 0; i <=5 ; i++){
+  let displayWin = play();
+  console.log(displayWin);
+  
+ if (displayWin.includes('win')){
+      winCount += 1;
+  } else if (displayWin.includes('lose')){
+      loseCount += 1;
+  } 
+ }
+
+ let finalRes = (winCount > loseCount) ? 'Player wins' : 'Computer wins';
+ let finalResDraw = (winCount == loseCount ) ? 'It\'s a draw!' : finalRes;
+ console.log(finalRes);
     
 </script>
 </body>
