@@ -3,85 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="normalize.css/normalize.css">
+   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
+    <div class="container">
+        <header class="header">
+          <h1>Rock Paper Scissors</h1>
+          <div id="score" class="score">
+            <p>Player: <b class = "player-score">0</b></p>
+            <p>vs</p>
+            <p>Computer: <b class = "computer-score">0</b></p>
+          </div>
+        </header>
+        <h2>RACE TO 5 WINS - CLICK TO PLAY</h2>
+        <div class="choices">
+        <div class="player-choices">
+          <img  class="rock" src="images/mrock.png"></img>
+          <img  class="paper" src="images/mpaper.png"></img>
+          <img class="scissors" src="images/mscissors.png"></img>
+        </div>
+        
+        <div class="comp-choices">
+        <img  class="rock" src="images/rock.png"></img>
+        <img class="paper" src="images/paper.png"></img>
+        <img class="scissors" src="images/scissors.png"></img>
+        </div>
+
+        </div>
     
-
-
-
-
-<script>
-    function computerPlay(){
-        let rockPaperScissor = ['rock', 'paper', 'scissors'];
-        return rockPaperScissor[Math.floor(Math.random() * rockPaperScissor.length)];
-    }
-
-    function play(playerSelection, computerSelection){
-        playerSelection = prompt('Rock, Paper or Scissors?', playerSelection);
-        computerSelection = computerPlay();
-
-         if(playerSelection.toLowerCase() === 'rock' ){
-             if(computerSelection === 'rock'){
-                return 'It\'s a draw!';
-             }
-
-            else if (computerSelection === 'scissors'){
-
-                return 'You win! Rock beats Scissors.';
-
-             } else if (computerSelection === 'paper'){
-
-                return 'You lose! Paper beats Rock.';
-             }
-             
-         } else if (playerSelection.toLowerCase() === 'paper' ){
-            if(computerSelection === 'paper'){
-                return 'It\'s a draw!';
-             }
-
-            else if (computerSelection === 'scissors'){
-
-                return 'You lose! Scissors beats Paper.';
-
-             } else if (computerSelection === 'rock'){
-
-                return 'You win! Paper beats Rock.';
-             }
-
-         } else if (playerSelection.toLowerCase() === 'scissors' ){
-            if(computerSelection === 'scissors'){
-                return 'It\'s a draw!';
-             }
-
-            else if (computerSelection === 'rock'){
-
-                return 'You lose! Rock beats Scissors.';
-
-             } else if (computerSelection === 'paper'){
-
-                return 'You win! Scissors beats Paper.';
-             }
-         }
-
-    }
-let winCount = 0;
-let loseCount = 0;
- for(let i = 0; i <=5 ; i++){
-  let displayWin = play();
-  console.log(displayWin);
+      </div>
   
- if (displayWin.includes('win')){
-      winCount += 1;
-  } else if (displayWin.includes('lose')){
-      loseCount += 1;
-  } 
- }
-
- let finalRes = (winCount > loseCount) ? 'Player wins' : 'Computer wins';
- let finalResDraw = (winCount == loseCount ) ? 'It\'s a draw!' : finalRes;
- console.log(finalRes);
+   
     
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
 </body>
-</html>
+</html> 

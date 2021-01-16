@@ -8,7 +8,7 @@ Learnings:
 4. Git basics - init, add, commit, pull, push
 5. Git merge conflicts lol
 
-Second attempt: with super basic UI using CSS Flexbox and Grid
+Second attempt: with super basic UI using CSS Flexbox and Grid.
 Learnings:
 1. Familiarization with DOM
 2. Basic CSS styling with grid and flex, 
