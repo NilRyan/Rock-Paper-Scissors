@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
@@ -19,23 +18,25 @@ body {
 .header {
   text-align: center;
 }
-h2{
+
+h2 {
   font-size: 1rem;
 }
 
+/* Scoreboard styling */
 .score {
   display: grid;
   grid-template-columns: 4fr 2fr 4fr;
   font-size: 0.7rem;
   color: #fff;
-
 }
 
 .score p:first-child {
   background: royalblue;
   margin: 0;
 }
-.score p:nth-child(2){
+
+.score p:nth-child(2) {
   margin: 0;
   background: black;
 }
@@ -44,52 +45,62 @@ h2{
   background: rgb(156, 73, 86);
   margin: 0;
 }
-.choices{
+/* Scoreboard styling */
+
+/* Player and Computer choices styling */
+.choices {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
 
 }
-.playerchoices {
+
+.player-choices {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.playerchoices img{
+.player-choices img {
   align-self: center;
   margin: 1rem;
   padding: 0.1rem;
   border-radius: 50%;
   border: 0.5rem solid transparent;
   transition: all .2s ease-in-out;
-  
+
 
 
 }
-.playerchoices img:first-child:hover{
+
+.player-choices img:first-child:hover {
   border: 0.5rem solid rgb(151, 192, 236);
   border-radius: 50%;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-.playerchoices img:nth-child(2):hover{
+
+.player-choices img:nth-child(2):hover {
   border: 0.5rem solid rgb(209, 150, 98);
   border-radius: 50%;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-.playerchoices img:last-child:hover{
+
+.player-choices img:last-child:hover {
   border: 0.5rem solid rgb(244, 182, 185);
   border-radius: 50%;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-.compchoices{
+
+.comp-choices {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-.compchoices img{
+
+.comp-choices img {
   margin: 1rem;
   padding: 0.1rem;
   align-self: center;
   border: 0.5rem solid transparent;
 }
 
+/* Player and Computer choices styling */
