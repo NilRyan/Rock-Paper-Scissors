@@ -1,6 +1,6 @@
 #Project1
 
-First Javascript application. Caveman style problem solving, too much if else statements.
+First Javascript application.
 Learnings:
 1. Select random item from an array.
 2. Application of conditionals and for loop.
