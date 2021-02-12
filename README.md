@@ -1,5 +1,6 @@
 # First Javascript application.
   https://nilryan.github.io/rock-paper-scissors/
+  ![rock-paper-scissors demo](Demo.gif)
 ## Learning Outcomes:
   1. Select random item from an array.
   2. Application of conditionals and for loop.
