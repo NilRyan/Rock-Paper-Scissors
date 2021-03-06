@@ -1,4 +1,5 @@
-# First Javascript application.
+# Rock Paper Scissors Game
+My first attempt at building an HTML, CSS, JS application. The game is a race to 5 against a computer and resets once the game is finished. Layout is implemented using CSS grid and flex. Styling was done using CSS.
   https://nilryan.github.io/rock-paper-scissors/
   ![rock-paper-scissors demo](Demo.gif)
 ## Learning Outcomes:
